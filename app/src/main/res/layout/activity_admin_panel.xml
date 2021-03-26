@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView_Defination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Select a Customer"
+        android:textAlignment="center"
+        android:textSize="20dp">
+    </TextView>
+    <Spinner
+        android:id="@+id/customer_Spinner"
+        android:layout_below="@+id/textView_Defination"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+    </Spinner>
+    <TextView
+        android:id="@+id/rewardPoint"
+        android:layout_below="@+id/customer_Spinner"
+        android:layout_width="226dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="53dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#448EE4"
+        android:textSize="70sp"
+        android:textStyle="bold">
+    </TextView>
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_below="@+id/rewardPoint"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Record"
+        android:textSize="24dp"
+        android:onClick="DeleteClicked"
+        android:background="@color/loginBkColor"
+        />
+</RelativeLayout>
